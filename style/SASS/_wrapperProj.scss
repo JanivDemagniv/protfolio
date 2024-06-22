@@ -1,0 +1,36 @@
+//project landing page wrapper style and arrangment
+.wrapper {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 10vw 80vw 10vw;
+    grid-template-rows: 60px 400px 100px auto 50px;
+    gap: 10px;
+    grid-template-areas:
+        "nav nav nav"
+        ". header ."
+        ". aside ."
+        ". main ."
+        "footer footer footer";
+}
+
+nav {
+    grid-area: nav;
+}
+
+header {
+    grid-area: header;
+}
+
+aside {
+    grid-area: aside;
+}
+
+
+main {
+    grid-area: main;
+}
+
+
+footer {
+    grid-area: footer;
+}

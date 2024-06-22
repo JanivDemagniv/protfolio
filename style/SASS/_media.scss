@@ -1,0 +1,91 @@
+//tables screen
+@media (min-width: 450px) and (max-width:960px) {
+    .wrapper {
+        width: auto;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+
+        header {
+            margin-top: 10vh;
+
+            .disc {
+                display: none;
+            }
+
+            .links {
+                a {
+                    width: 30vw;
+                }
+            }
+        }
+
+        main {
+            .example {
+                width: auto;
+
+                img {
+                    width: 400px;
+                }
+            }
+        }
+
+        .about {
+
+            .contAbout {
+                padding: 40px;
+                padding-bottom: 10px;
+
+                p {
+                    width: 100%;
+                    padding: 5px 5px 5px 10px;
+                }
+            }
+        }
+
+        .contact {
+            flex-direction: column;
+
+            .iconWrapper {
+                width: 100%;
+
+                img {
+                    height: 30vh;
+                    width: 100%;
+                }
+            }
+
+            .formWrapper {
+                width: 100%;
+                padding: 20px;
+                margin: 0 auto;
+
+                input {
+                    width: 100%;
+                }
+            }
+
+        }
+
+    }
+
+    footer {
+        height: 50vh;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 40px;
+
+
+        .allRights {
+
+            h6 {
+                font-size: 0.7em;
+            }
+        }
+    }
+
+    .mycard {
+        width: 300px;
+        height: 500px;
+    }
+}
