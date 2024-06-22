@@ -1,0 +1,124 @@
+//contact style
+.contact {
+    background-color: #3A3A3A;
+    display: flex;
+    justify-content: center;
+
+    .iconWrapper {
+        width: 50%;
+        margin-right: 20px;
+        object-fit: contain;
+
+        img {
+            display: block;
+            width: 600px;
+            object-fit: cover;
+        }
+    }
+
+    .formWrapper {
+        width: 50%;
+        height: 450px;
+        padding-right: 50px;
+        display: flex;
+        flex-direction: column;
+        font-family: $fontAll;
+        color: white;
+
+        h2 {
+            font-size: 2em;
+        }
+
+        p {
+            font-size: 1em;
+        }
+
+        .inputWrapper {
+            width: 100%;
+
+            label {
+                display: block;
+            }
+
+            input {
+                width: 60%;
+                height: 2em;
+                border: none;
+                border-bottom: 5px solid #1AE0EC;
+            }
+
+            #massage {
+                height: 5em;
+            }
+
+
+        }
+
+        .btnWrapper {
+            margin-top: 10px;
+
+            input {
+                width: 20%;
+                border-radius: 10px;
+                height: 2em;
+                background-color: #1AE0EC;
+            }
+        }
+
+        form {
+
+            label {
+                font-size: 1em;
+                font-weight: normal;
+                color: #fff;
+            }
+        }
+    }
+
+
+}
+
+//footer style
+
+footer {
+    background-color: #1AE0EC;
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+
+    .smallIcaonWrapper {
+        img {
+            display: block;
+            height: 30px;
+            margin: 5px auto;
+        }
+
+    }
+
+    .allRights {
+        align-self: last baseline;
+        width: 100%;
+        background-color: #000;
+        height: 5vh;
+        position: absolute;
+        bottom: 5px;
+        display: flex;
+        align-items: center;
+        color: #1AE0EC;
+        justify-content: space-around;
+
+        h6 {
+            font-family: $fontName;
+            display: block;
+            width: 45%;
+            // border: 1px solid #fff;
+
+        }
+
+        #allRights {
+            padding-left: 90%;
+        }
+    }
+}

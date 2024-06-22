@@ -1,0 +1,122 @@
+//card style - I use the name "mycard" for my class to avoid trabule with bootstrap card style.
+.mycard {
+    width: 300px;
+    height: 500px;
+    margin: 20px;
+    background-color: $bgcWhite;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 0 5px $shadow;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 200px 50px 100px 50px 50px;
+    grid-template-areas:
+        "imgPro imgPro imgPro imgPro"
+        "Headline Headline Headline Headline"
+        "Text Text Text Text"
+        "imgSkillone imgSkilltwo imgSkillthree imgSkillfour"
+        "anchor anchor anchor anchor";
+
+    .imgWrapper {
+        width: 300px;
+        height: 200px;
+        overflow: hidden;
+        grid-area: imgPro;
+    }
+
+    .imgPro {
+        display: block;
+        width: 300px;
+        height: 200px;
+        overflow: hidden;
+        transition: all 1s ease-in-out;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    h3 {
+        grid-area: Headline;
+        display: block;
+        margin: 0 auto;
+        line-height: 2;
+        font-size: 1.5em;
+    }
+
+    p {
+        grid-area: Text;
+        text-align: justify;
+        padding: 15px;
+    }
+
+    img {
+        display: block;
+        width: 50px;
+        grid-area: imgSkill;
+        margin: 0 auto;
+    }
+
+    .imgOne {
+        grid-area: imgSkillone;
+        border-radius: 20px;
+        padding: 5px;
+        box-shadow: 0 0 5px $shadow;
+    }
+
+    .imgTwo {
+        grid-area: imgSkilltwo;
+        border-radius: 20px;
+        padding: 5px;
+        box-shadow: 0 0 5px $shadow;
+    }
+
+
+    .imgThree {
+        grid-area: imgSkillthree;
+        border-radius: 20px;
+        padding: 5px;
+        box-shadow: 0 0 5px $shadow;
+    }
+
+    .imgFour {
+        grid-area: imgSkillfour;
+        border-radius: 20px;
+        padding: 5px;
+        box-shadow: 0 0 5px $shadow;
+    }
+
+    a {
+        grid-area: anchor;
+        display: block;
+        width: 120px;
+        height: 30px;
+        font-size: 1em;
+        margin: 30px auto 0;
+        background-color: #1AE0EC;
+        text-align: center;
+        line-height: 1.8;
+        text-decoration: none;
+        color: $textColor;
+        border-radius: 10px;
+        box-shadow: 0 0 5px $shadow;
+        transition: all 0.5s ease-in-out;
+
+        &:hover {
+            color: #006166;
+            text-decoration: underline;
+        }
+    }
+}
+
+.example {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        border-radius: 20px;
+        box-shadow: 0 0 5px $shadow;
+    }
+}
