@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yaniv's Project</title>
+    <link rel="stylesheet" href="./style/css/main.css">
+    <link rel="icon" href="./images/fav.png" sizes="32x32">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="wrapper">
+        <!--The nav bar code -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="./images/protfolioPic.jpg" alt="Logo" width="30" height="30"
+                        class="d-inline-block align-text-top">
+                    Yaniv Romem
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Projects
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#work1">The Coffe Project</a></li>
+                                <li><a class="dropdown-item" href="#work2">Leading to New Futre Project</a></li>
+                                <li><a class="dropdown-item" href="#work3">Here & Now Project</a></li>
+                                <li><a class="dropdown-item" href="#work4">Thinking Out Of The Box Project</a></li>
+                                <li><a class="dropdown-item" href="#work5">See The World Project</a></li>
+                                <li><a class="dropdown-item" href="#work6">Another action</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--Header and the main Headline-->
+        <header id="topPage">
+            <h1>Yaniv's Protfolio</h1>
+            <h6>Also known as Yaniv DeCoolest</h6>
+            <div class="disc">
+                <h6>
+                    Yaniv Romem
+                </h6>
+            </div>
+        </header>
+        <!--display of the skillz used in the website-->
+        <aside id="skillz">
+            <img src="images/img-HTML.png" alt="HTML"><img src="images/img-CSS.png" alt="CSS"><img
+                src="images/img-SASS.png" alt="SASS"><img src="images/img-Bootstrap.png" alt="Bootstrap">
+        </aside>
+        <!--this part will present me, and a lilttle information about me-->
+        <section class="about" id="about">
+            <div class="contAbout">
+                <div class="imgWrapper">
+                    <img src="./images/protfolioPic.jpg" alt="Yaniv Image">
+                </div>
+                <h2>About me</h2>
+                <p>My name is Yaniv Romem, I'm 32 form Tel Aviv.
+                    most of my life I tried to pursue my life goal to become a musician.
+                    trough out the years I realized that music is my love, but not my proffetion.
+                    I dicided to take a change in my life and go back to my old dream to become a web developer.
+                    as a kid I used to build websites with photoshop and HTML, back then I didn't know English
+                    but it didn't bother me finding the relvnte code I needed for my websites.
+                    I do belive that my life expriens will help me get along in any working enviorment
+                </p>
+                <a href="./resume.pdf" download="Resume" target="_blank">Download my Rasume</a>
+            </div>
+        </section>
+        <!--The projects zone-->
+        <main id="project">
+            <h2>My Works</h2>
+            <h4>My work of HTML and CSS until now, in those work I'll display my knowlage in HTML and CSS</h4>
+            <!--this part inclueds the projects card-->
+            <div class="workWrapper">
+                <div class="mycard card1" id="work1">
+                    <div class="imgWrapper">
+                        <img class="imgPro" src="./images/webProj2.jpg" alt="placeHolder">
+                    </div>
+                    <h3>The Good Morning Coffe</h3>
+                    <p>In this project I used HTML and CSS to make this website</p>
+                    <img src="images/img-HTML.png" alt="HTML" class="imgOne"><img class="imgTwo"
+                        src="images/img-CSS.png" alt="CSS"><img class="imgThree" src="images/img-SASS.png"
+                        alt="SASS"><img class="imgFour" src="images/img-Bootstrap.png" alt="Bootstrap">
+                    <a href="./projectCofe.html">To The Project</a>
+                </div>
+                <div class="mycard card2" id="work2">
+                    <div class="imgWrapper">
+                        <img class="imgPro" src="./images/webProj1.jpg" alt="placeHolder">
+                    </div>
+                    <h3>Let Us Lead You</h3>
+                    <p>that landing page containt picture as a main igrediante. I use CSS position to
+                        establised that website</p>
+                    <img src="images/img-HTML.png" alt="HTML" class="imgOne"><img class="imgTwo"
+                        src="images/img-CSS.png" alt="CSS"><img class="imgThree" src="images/img-SASS.png"
+                        alt="SASS"><img class="imgFour" src="images/img-Bootstrap.png" alt="Bootstrap">
+                    <a href="./projectLeading.html">To The Project</a>
+                </div>
+                <div class="mycard card3" id="work3">
+                    <div class="imgWrapper">
+                        <img class="imgPro" src="./images/hereNow.jpg" alt="Here & Now">
+                    </div>
+                    <h3>Here & Now</h3>
+                    <p>A bueatifull landing page with an amazing color choosing</p>
+                    <img src="images/img-HTML.png" alt="HTML" class="imgOne"><img class="imgTwo"
+                        src="images/img-CSS.png" alt="CSS"><img class="imgThree" src="images/img-SASS.png"
+                        alt="SASS"><img class="imgFour" src="images/img-Bootstrap.png" alt="Bootstrap">
+                    <a href="./projectNow.html">To The Project</a>
+                </div>
+                <div class="mycard card4" id="work4">
+                    <div class="imgWrapper">
+                        <img class="imgPro" src="./images/outOfBox.jpg" alt="placeHolder">
+                    </div>
+                    <h3>Thinking out of the box</h3>
+                    <p>due to the comeplexcti of the website, I used SASS as a way to maintane my CSS clean and arranged
+                    </p>
+                    <img src="images/img-HTML.png" alt="HTML" class="imgOne"><img class="imgTwo"
+                        src="images/img-CSS.png" alt="CSS"><img class="imgThree" src="images/img-SASS.png"
+                        alt="SASS"><img class="imgFour" src="images/img-Bootstrap.png" alt="Bootstrap">
+                    <a href="./projectOutofBox.html">To The Project</a>
+                </div>
+                <div class="mycard card5" id="work5">
+                    <div class="imgWrapper">
+                        <img class="imgPro" src="./images/seeTheWorld.jpg" alt="placeHolder">
+                    </div>
+                    <h3>Discover a world</h3>
+                    <p>In this landing page I used grid to position all the pictures in thier place</p>
+                    <img src="images/img-HTML.png" alt="HTML" class="imgOne"><img class="imgTwo"
+                        src="images/img-CSS.png" alt="CSS"><img class="imgThree" src="images/img-SASS.png"
+                        alt="SASS"><img class="imgFour" src="images/img-Bootstrap.png" alt="Bootstrap">
+                    <a href="./projectSeeTheWorld.html">To The Project</a>
+                </div>
+                <div class="mycard card6" id="work6">
+                    <div class="imgWrapper">
+                        <img class="imgPro" src="images/consul.jpg" alt="placeHolder">
+                    </div>
+                    <h3>Consulation</h3>
+                    <p>In this landing page I use the technologi of HTML and CSS</p>
+                    <img src="images/img-HTML.png" alt="HTML" class="imgOne"><img class="imgTwo"
+                        src="images/img-CSS.png" alt="CSS"><img class="imgThree" src="images/img-SASS.png"
+                        alt="SASS"><img class="imgFour" src="images/img-Bootstrap.png" alt="Bootstrap">
+                    <a href="projectCons.html">To The Project</a>
+                </div>
+            </div>
+        </main>
+        <!--the contact section-->
+        <section class="contact" id="contact">
+            <div class="iconWrapper"><img src="images/Rectangle 41.png" alt="mail"></div>
+            <div class="formWrapper">
+                <div class="titleWrapper">
+                    <h2>Contact Me</h2>
+                    <p>Hit me up, you can only profit from it</p>
+                </div>
+                <form action="">
+                    <div class="inputWrapper">
+                        <label for="fullName">Full Name:</label>
+                        <input type="text" id="fullName">
+                    </div>
+                    <div class="inputWrapper">
+                        <label for="eMail">Email Adress:</label>
+                        <input type="email" id="eMail">
+                    </div>
+                    <div class="inputWrapper">
+                        <label for="phone">Phone Number:</label>
+                        <input type="number" id="phone">
+                    </div>
+                    <div class="inputWrapper">
+                        <label for="massage">Massage:</label>
+                        <input type="text" id="massage">
+                    </div>
+                    <div class="btnWrapper">
+                        <input type="submit" value="Send">
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!--the footer section-->
+        <footer id="footer">
+            <div class="smallIcaonWrapper">
+                <img src="./images/Icon material-location-on.svg" alt="Location Icon">
+                <h6>Tel Aviv Grizim 3</h6>
+            </div>
+            <div class="smallIcaonWrapper">
+                <img src="./images/Icon simple-email.svg" alt="Email Icon">
+                <h6>janivjry@gmail.com</h6>
+            </div>
+            <div class="smallIcaonWrapper">
+                <img src="./images/Icon simple-whatsapp.svg" alt="Whatsapp Icon">
+                <h6>050-7979613</h6>
+            </div>
+            <div class="smallIcaonWrapper">
+                <img src="./images/telephone-fill.svg" alt="Whatsapp Icon">
+                <h6>050-7979613</h6>
+            </div>
+            <div class="smallIcaonWrapper">
+                <img src="./images/Icon awesome-linkedin-in.svg" alt="linkedIn Icon">
+                <h6>Yaniv Romem</h6>
+            </div>
+            <div class="smallIcaonWrapper">
+                <img src="./images/Icon awesome-facebook-f.svg" alt="facebook Icon">
+                <h6>Yaniv Romem</h6>
+            </div>
+            <div class="allRights">
+                <h6 id="nameRights">Yaniv Romem</h6>
+                <h6 id="allRights">All rights</h6>
+            </div>
+        </footer>
+    </div>
+    <!--Boostrap script-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
