@@ -1,0 +1,52 @@
+.container {
+    display: grid;
+    width: 100vw;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 60vh 30vh auto 15vh 2vh;
+    grid-template-areas:
+        "header header header header"
+        "box1 box2 box3 box4"
+        "main main main main"
+        "aside aside aside aside"
+        "footer footer footer footer";
+
+    header {
+        grid-area: header;
+        background: #0EE1E1 0% 0% no-repeat padding-box;
+    }
+
+    .box1 {
+        grid-area: box1;
+        background: #F8F8F8 0% 0% no-repeat padding-box;
+    }
+
+    .box2 {
+        grid-area: box2;
+        background: #F8F8F8 0% 0% no-repeat padding-box;
+    }
+
+    .box3 {
+        grid-area: box3;
+        background: #F8F8F8 0% 0% no-repeat padding-box;
+    }
+
+    .box4 {
+        grid-area: box4;
+        background: #F8F8F8 0% 0% no-repeat padding-box;
+    }
+
+    main {
+        grid-area: main;
+        background: #F0FFFF 0% 0% no-repeat padding-box;
+    }
+
+    aside {
+        grid-area: aside;
+
+    }
+
+    footer {
+        grid-area: footer;
+        background: #0EE1E1 0% 0% no-repeat padding-box;
+    }
+}

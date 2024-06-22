@@ -1,0 +1,125 @@
+@media (max-width:960px) {
+    .container {
+        width: 100vw;
+        grid-template-columns: 100%;
+        grid-template-rows: 50vh 40vh 40vh 40vh 40vh auto 10vh 2vh;
+        grid-template-areas:
+            "header"
+            "box1"
+            "box2"
+            "box3"
+            "box4"
+            "main"
+            "aside"
+            "footer";
+
+        header {
+            flex-direction: column;
+
+            img {
+                width: 79px;
+                height: 65px;
+            }
+
+            h1 {
+                font: normal normal 900 33px/49px Heebo;
+            }
+
+            p {
+                font: normal normal normal 15px/22px Heebo;
+            }
+
+            .whatsappIcon {
+                display: none;
+            }
+
+
+        }
+
+        .box {
+            width: 80%;
+
+            img {
+                height: 32px;
+            }
+
+            h3 {
+                font: normal normal 900 22px/32px Heebo;
+                color: #0EE1E1;
+            }
+
+            p {
+                font: normal normal normal 15px/22px Heebo;
+                color: #000000;
+            }
+        }
+
+        main {
+            flex-direction: column;
+
+            .formWrapper {
+                width: 100%;
+
+                h2 {
+                    text-align: right;
+                    font: normal normal 900 32px/47px Heebo;
+                    color: #000000;
+                }
+
+                p {
+                    text-align: right;
+                    font: normal normal normal 15px/22px Heebo;
+                    color: #000000;
+                }
+
+                form {
+                    width: 80%;
+
+                    label {
+                        font: normal normal bold 12px/18px Heebo;
+                        color: #2C2C2C;
+                    }
+
+                    input {
+                        width: 307px;
+                        height: 37px;
+                    }
+
+                    #commet {
+                        width: 307px;
+                        height: 105px;
+                    }
+
+                    #btn {
+                        width: 308px;
+                        height: 37px;
+                        font: normal normal bold 13px/19px Heebo;
+                        letter-spacing: 0.2px;
+                        color: #000000;
+                    }
+                }
+            }
+
+            .mapWrapper {
+                width: 100%;
+                margin-top: 10px;
+
+                iframe {
+                    width: 90%;
+                    height: 90%;
+                }
+            }
+        }
+
+        aside {
+            .iconWrapper {
+                width: 45px;
+                height: 45px;
+
+                img {
+                    height: 24px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,21 @@
+aside {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .iconWrapper {
+        width: 95px;
+        height: 95px;
+        background-color: #0EE1E1;
+        border-radius: 50%;
+        margin: 0 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            height: 45px;
+        }
+    }
+}

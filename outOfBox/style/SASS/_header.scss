@@ -1,0 +1,49 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    position: relative;
+
+    img {
+        width: 20vw;
+        display: block;
+    }
+
+    .contHead {
+
+        width: 50%;
+
+        h1 {
+            font: normal normal 900 66px/97px Heebo;
+            color: #000000;
+        }
+
+        p {
+            font: normal normal normal 20px/29px Heebo;
+            color: #000000;
+        }
+    }
+
+    .whatsappIcon {
+        width: 95px;
+        height: 95px;
+        border-radius: 50%;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        box-shadow: 0px 3px 6px #00000029;
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            display: block;
+            width: 54px;
+            height: 54px;
+        }
+    }
+
+
+}
