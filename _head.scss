@@ -1,0 +1,79 @@
+//nav bar css - working with the bootstrap difinetions.
+nav {
+    .navbar-brand {
+        font-family: $fontName;
+        font-size: 1em;
+
+        img {
+            border-radius: 50%;
+        }
+    }
+}
+
+//header css
+header {
+    background: $bgcLogo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 0 5px $shadow;
+    position: relative;
+
+    h1 {
+        font-size: 5em;
+        text-shadow: 0 0 10px $shadow;
+    }
+
+    h6 {
+        font-size: 1em;
+        font-weight: normal;
+        text-shadow: 0 0 10px $shadow;
+    }
+
+    .links {
+        display: flex;
+
+        a {
+            display: block;
+            width: 10vw;
+            text-align: center;
+            background-color: $bgcSetUp;
+            margin: 20px;
+            text-decoration: none;
+            color: #2C2C2C;
+            border-radius: 20px;
+            line-height: 2;
+            box-shadow: 0 0 5px $shadow;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+
+    }
+
+    //the pop up style
+    .disc {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background-color: rgba(0, 34, 68, 0.7);
+        color: #e7e7e7;
+        height: 0;
+        overflow: hidden;
+        transition: all 0.7s ease-in-out;
+    }
+
+    .disc h6 {
+        font-size: 1.5em;
+        font-weight: normal;
+        font-family: $fontName;
+        padding: 0 5px 6px 7px;
+    }
+
+    &:hover .disc {
+        height: 45px;
+    }
+}
