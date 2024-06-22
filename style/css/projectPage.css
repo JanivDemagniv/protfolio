@@ -1,0 +1,533 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: roboto;
+  font-size: 1em;
+  background-color: #cacaca;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 10vw 80vw 10vw;
+  grid-template-rows: 60px 400px 100px auto 50px;
+  gap: 10px;
+  grid-template-areas: "nav nav nav" ". header ." ". aside ." ". main ." "footer footer footer";
+}
+
+nav {
+  grid-area: nav;
+}
+
+header {
+  grid-area: header;
+}
+
+aside {
+  grid-area: aside;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+}
+
+nav .navbar-brand {
+  font-family: pacifico;
+  font-size: 1em;
+}
+nav .navbar-brand img {
+  border-radius: 50%;
+}
+
+header {
+  background: linear-gradient(11deg, rgb(26, 224, 236) 0%, rgb(0, 151, 160) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 0 5px #a1a1a1;
+  position: relative;
+}
+header h1 {
+  font-size: 5em;
+  text-shadow: 0 0 10px #a1a1a1;
+}
+header h6 {
+  font-size: 1em;
+  font-weight: normal;
+  text-shadow: 0 0 10px #a1a1a1;
+}
+header .links {
+  display: flex;
+}
+header .links a {
+  display: block;
+  width: 10vw;
+  text-align: center;
+  background-color: #1AE0EC;
+  margin: 20px;
+  text-decoration: none;
+  color: #2C2C2C;
+  border-radius: 20px;
+  line-height: 2;
+  box-shadow: 0 0 5px #a1a1a1;
+}
+header .links a:hover {
+  text-decoration: underline;
+}
+header .disc {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 34, 68, 0.7);
+  color: #e7e7e7;
+  height: 0;
+  overflow: hidden;
+  transition: all 0.7s ease-in-out;
+}
+header .disc h6 {
+  font-size: 1.5em;
+  font-weight: normal;
+  font-family: pacifico;
+  padding: 0 5px 6px 7px;
+}
+header:hover .disc {
+  height: 45px;
+}
+
+.mycard {
+  width: 300px;
+  height: 500px;
+  margin: 20px;
+  background-color: #eeeeee;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 0 5px #a1a1a1;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 200px 50px 100px 50px 50px;
+  grid-template-areas: "imgPro imgPro imgPro imgPro" "Headline Headline Headline Headline" "Text Text Text Text" "imgSkillone imgSkilltwo imgSkillthree imgSkillfour" "anchor anchor anchor anchor";
+}
+.mycard .imgWrapper {
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+  grid-area: imgPro;
+}
+.mycard .imgPro {
+  display: block;
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+  transition: all 1s ease-in-out;
+}
+.mycard .imgPro:hover {
+  transform: scale(1.1);
+}
+.mycard h3 {
+  grid-area: Headline;
+  display: block;
+  margin: 0 auto;
+  line-height: 2;
+  font-size: 1.5em;
+}
+.mycard p {
+  grid-area: Text;
+  text-align: justify;
+  padding: 15px;
+}
+.mycard img {
+  display: block;
+  width: 50px;
+  grid-area: imgSkill;
+  margin: 0 auto;
+}
+.mycard .imgOne {
+  grid-area: imgSkillone;
+  border-radius: 20px;
+  padding: 5px;
+  box-shadow: 0 0 5px #a1a1a1;
+}
+.mycard .imgTwo {
+  grid-area: imgSkilltwo;
+  border-radius: 20px;
+  padding: 5px;
+  box-shadow: 0 0 5px #a1a1a1;
+}
+.mycard .imgThree {
+  grid-area: imgSkillthree;
+  border-radius: 20px;
+  padding: 5px;
+  box-shadow: 0 0 5px #a1a1a1;
+}
+.mycard .imgFour {
+  grid-area: imgSkillfour;
+  border-radius: 20px;
+  padding: 5px;
+  box-shadow: 0 0 5px #a1a1a1;
+}
+.mycard a {
+  grid-area: anchor;
+  display: block;
+  width: 120px;
+  height: 30px;
+  font-size: 1em;
+  margin: 30px auto 0;
+  background-color: #1AE0EC;
+  text-align: center;
+  line-height: 1.8;
+  text-decoration: none;
+  color: #1d1d1d;
+  border-radius: 10px;
+  box-shadow: 0 0 5px #a1a1a1;
+  transition: all 0.5s ease-in-out;
+}
+.mycard a:hover {
+  color: #006166;
+  text-decoration: underline;
+}
+
+.example {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.example img {
+  border-radius: 20px;
+  box-shadow: 0 0 5px #a1a1a1;
+}
+
+aside {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 5px #a1a1a1;
+}
+aside img {
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin-left: 10px;
+}
+
+.about {
+  background-color: #eeeeee;
+  box-shadow: 0 0 5px #a1a1a1;
+}
+.about .contAbout {
+  width: 500px;
+  margin: 0 auto;
+  padding: 10px;
+  padding: 20px;
+}
+.about .contAbout .imgWrapper {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.about .contAbout img {
+  display: block;
+  width: 200px;
+  height: 200px;
+  transition: all 0.7s ease-in-out;
+}
+.about .contAbout img:hover {
+  transform: scale(1.1);
+}
+.about .contAbout h2 {
+  font-size: 2em;
+  text-align: center;
+}
+.about .contAbout p {
+  text-align: justify;
+}
+.about .contAbout a {
+  font-size: 1em;
+  text-decoration: none;
+  display: block;
+  width: 200px;
+  line-height: 2;
+  color: #1d1d1d;
+  background-color: #1AE0EC;
+  text-align: center;
+  border-radius: 20px;
+  margin: 0 auto;
+}
+.about .contAbout a:hover {
+  text-decoration: underline;
+}
+
+main {
+  background-color: #cacaca;
+  color: #1d1d1d;
+  box-shadow: 0 0 5px #a1a1a1;
+  padding: 20px;
+}
+main h2 {
+  display: block;
+  width: 250px;
+  margin: 0 auto;
+  font-size: 2.5em;
+}
+main h4 {
+  display: block;
+  width: 600px;
+  font-size: 1em;
+  font-weight: normal;
+  margin: 0 auto;
+  text-align: center;
+}
+main .workWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  overflow: auto;
+}
+
+.contact {
+  background-color: #3A3A3A;
+  display: flex;
+  justify-content: center;
+}
+.contact .iconWrapper {
+  width: 50%;
+  margin-right: 20px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.contact .iconWrapper img {
+  display: block;
+  width: 600px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.contact .formWrapper {
+  width: 50%;
+  height: 450px;
+  padding-right: 50px;
+  display: flex;
+  flex-direction: column;
+  font-family: roboto;
+  color: white;
+}
+.contact .formWrapper h2 {
+  font-size: 2em;
+}
+.contact .formWrapper p {
+  font-size: 1em;
+}
+.contact .formWrapper .inputWrapper {
+  width: 100%;
+}
+.contact .formWrapper .inputWrapper label {
+  display: block;
+}
+.contact .formWrapper .inputWrapper input {
+  width: 60%;
+  height: 2em;
+  border: none;
+  border-bottom: 5px solid #1AE0EC;
+}
+.contact .formWrapper .inputWrapper #massage {
+  height: 5em;
+}
+.contact .formWrapper .btnWrapper {
+  margin-top: 10px;
+}
+.contact .formWrapper .btnWrapper input {
+  width: 20%;
+  border-radius: 10px;
+  height: 2em;
+  background-color: #1AE0EC;
+}
+.contact .formWrapper form label {
+  font-size: 1em;
+  font-weight: normal;
+  color: #fff;
+}
+
+footer {
+  background-color: #1AE0EC;
+  display: flex;
+  gap: 20px;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+}
+footer .smallIcaonWrapper img {
+  display: block;
+  height: 30px;
+  margin: 5px auto;
+}
+footer .allRights {
+  align-self: last baseline;
+  width: 100%;
+  background-color: #000;
+  height: 5vh;
+  position: absolute;
+  bottom: 5px;
+  display: flex;
+  align-items: center;
+  color: #1AE0EC;
+  justify-content: space-around;
+}
+footer .allRights h6 {
+  font-family: pacifico;
+  display: block;
+  width: 45%;
+}
+footer .allRights #allRights {
+  padding-left: 90%;
+}
+
+footer {
+  height: 5vh !important;
+}
+
+@media (min-width: 450px) and (max-width: 960px) {
+  .wrapper {
+    width: auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  .wrapper header {
+    margin-top: 10vh;
+  }
+  .wrapper header .disc {
+    display: none;
+  }
+  .wrapper header .links a {
+    width: 30vw;
+  }
+  .wrapper main .example {
+    width: auto;
+  }
+  .wrapper main .example img {
+    width: 400px;
+  }
+  .wrapper .about .contAbout {
+    padding: 40px;
+    padding-bottom: 10px;
+  }
+  .wrapper .about .contAbout p {
+    width: 100%;
+    padding: 5px 5px 5px 10px;
+  }
+  .wrapper .contact {
+    flex-direction: column;
+  }
+  .wrapper .contact .iconWrapper {
+    width: 100%;
+  }
+  .wrapper .contact .iconWrapper img {
+    height: 30vh;
+    width: 100%;
+  }
+  .wrapper .contact .formWrapper {
+    width: 100%;
+    padding: 20px;
+    margin: 0 auto;
+  }
+  .wrapper .contact .formWrapper input {
+    width: 100%;
+  }
+  footer {
+    height: 50vh;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 40px;
+  }
+  footer .allRights h6 {
+    font-size: 0.7em;
+  }
+  .mycard {
+    width: 300px;
+    height: 500px;
+  }
+}
+@media (max-width: 449px) {
+  .wrapper {
+    width: auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  .wrapper header {
+    margin-top: 5vh;
+  }
+  .wrapper header .disc {
+    display: none;
+  }
+  .wrapper header .links a {
+    width: 30vw;
+  }
+  .wrapper #skillz img {
+    margin: 0;
+  }
+  .wrapper main .example {
+    width: auto;
+  }
+  .wrapper main .example img {
+    width: 400px;
+  }
+  .wrapper .about .contAbout {
+    padding: 40px;
+    padding-right: 130px;
+    padding-bottom: 10px;
+  }
+  .wrapper .about .contAbout p {
+    width: 100%;
+    padding: 5px 5px 5px 10px;
+  }
+  .wrapper .contact {
+    flex-direction: column;
+  }
+  .wrapper .contact .iconWrapper {
+    width: 100%;
+  }
+  .wrapper .contact .iconWrapper img {
+    height: 30vh;
+    width: 100%;
+  }
+  .wrapper .contact .formWrapper {
+    width: 100%;
+    padding: 20px;
+    margin: 0 auto;
+  }
+  .wrapper .contact .formWrapper input {
+    width: 100%;
+  }
+  footer {
+    height: 50vh;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 40px;
+  }
+  footer .smallIcaonWrapper {
+    padding: 5px;
+  }
+  footer .allRights h6 {
+    font-size: 0.7em;
+  }
+  .mycard {
+    width: 300px;
+    height: 500px;
+  }
+}/*# sourceMappingURL=projectPage.css.map */
