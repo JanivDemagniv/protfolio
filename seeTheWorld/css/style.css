@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E5EEFF;
+    font-family: Assistant;
+}
+
+.container {
+    width: 75vw;
+    margin: 10vh auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 5px;
+    grid-template-areas:
+        "img2 img1 cont cont"
+        "img4 img3 cont cont"
+        "img8 img7 img6 img5"
+        "form form img10 img9"
+        "form form img12 img11"
+        "form form img14 img13";
+}
+
+.container .imgWrapper {
+    width: 296px;
+    height: 271px;
+}
+
+.container img {
+    width: 296px;
+    height: 271px;
+}
+
+.cont {
+    grid-area: cont;
+    background: #020253 0% 0% no-repeat padding-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont h1 {
+    font: normal normal bold 61px/80px Assistant;
+    color: #0EE1DA;
+}
+
+.cont p {
+    font: normal normal normal 20px/26px Assistant;
+    color: #F9F9F9;
+    width: 80%;
+    text-align: center;
+}
+
+.imgWrapper1 {
+    grid-area: img1;
+}
+
+.imgWrapper2 {
+    grid-area: img2;
+}
+
+.imgWrapper3 {
+    grid-area: img3;
+}
+
+.imgWrapper4 {
+    grid-area: img4;
+}
+
+.imgWrapper5 {
+    grid-area: img5;
+}
+
+.imgWrapper6 {
+    grid-area: img6;
+}
+
+.imgWrapper7 {
+    grid-area: img7;
+}
+
+.imgWrapper8 {
+    grid-area: img8;
+}
+
+.imgWrapper9 {
+    grid-area: img9;
+}
+
+.imgWrapper10 {
+    grid-area: img10;
+}
+
+.imgWrapper11 {
+    grid-area: img11;
+}
+
+.imgWrapper12 {
+    grid-area: img12;
+}
+
+.imgWrapper13 {
+    grid-area: img13;
+}
+
+.imgWrapper14 {
+    grid-area: img14;
+}
+
+.formWrapper {
+    grid-area: form;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #8E097C;
+    gap: 20px;
+    padding-top: 20px;
+}
+
+.formWrapper h2 {
+    font: normal normal bold 35px/46px Assistant;
+    color: #FFFFFF;
+}
+
+.formWrapper p {
+    font: normal normal normal 20px/26px Assistant;
+    text-align: center;
+    color: #F9F9F9;
+}
+
+.formWrapper form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.formWrapper form label {
+    font: normal normal bold 16px/24px Heebo;
+    letter-spacing: 0px;
+    color: #0EE1DA;
+}
+
+.formWrapper input {
+    width: 500px;
+    height: 60px;
+    background: #E5EEFF 0% 0% no-repeat padding-box;
+    border: none;
+    border-bottom: 5px solid #0EE1DA;
+}
+
+#commet {
+    width: 500px;
+    height: 172px;
+}
+
+#btn {
+    width: 501px;
+    height: 60px;
+    background: #0EE1DA 0% 0% no-repeat padding-box;
+    font: normal normal bold 24px/33px Heebo;
+    letter-spacing: 0.36px;
+    color: #011560;
+}
+
+@media (max-width:960px) {
+    .container {
+        width: 100vw;
+        margin: 0 auto;
+        gap: 5px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(24, 1fr);
+        grid-template-areas:
+            "cont cont"
+            "cont cont"
+            "img2 img1"
+            "img4 img3"
+            "img6 img5"
+            "form form"
+            "form form"
+            "form form"
+            "form form"
+            "img8 img7"
+            "img10 img9"
+            "img12 img11"
+            "img14 img13";
+    }
+
+    .container .imgWrapper {
+        width: 159px;
+        height: 146px;
+    }
+
+    .container img {
+        width: 159px;
+        height: 146px;
+    }
+
+    .cont h1 {
+        font: normal normal bold 36px/47px Assistant;
+    }
+
+    .cont p {
+        font: normal normal normal 20px/26px Assistant;
+        width: 90%;
+    }
+
+    .formWrapper h2 {
+        font: normal normal bold 25px/33px Assistant;
+    }
+
+    .formWrapper p {
+        font: normal normal normal 15px/19px Assistant;
+    }
+
+    .formWrapper form label {
+        font: normal normal bold 7px/10px Heebo;
+    }
+
+    .formWrapper form input {
+        width: 278px;
+        height: 33px;
+    }
+
+    #commet {
+        width: 278px;
+        height: 96px;
+    }
+
+    #btn {
+        width: 278px;
+        height: 33px;
+        font: normal normal bold 12px/16px Heebo;
+    }
+}
