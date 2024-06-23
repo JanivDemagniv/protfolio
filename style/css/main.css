@@ -474,7 +474,7 @@ footer .allRights #allRights {
     flex-direction: column;
   }
   .wrapper header {
-    margin-top: 5vh;
+    margin-top: 10vh;
   }
   .wrapper header .disc {
     display: none;
@@ -490,6 +490,9 @@ footer .allRights #allRights {
   }
   .wrapper main .example img {
     width: 400px;
+  }
+  .wrapper main h4 {
+    padding-right: 250px;
   }
   .wrapper .about .contAbout {
     padding: 40px;
@@ -519,13 +522,14 @@ footer .allRights #allRights {
     width: 100%;
   }
   footer {
-    height: 50vh;
+    height: auto;
     flex-direction: row;
     flex-wrap: wrap;
     padding: 40px;
   }
   footer .smallIcaonWrapper {
     padding: 5px;
+    padding-bottom: 10px;
   }
   footer .allRights h6 {
     font-size: 0.7em;
