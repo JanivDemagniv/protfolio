@@ -38,7 +38,7 @@ To view the project locally:
 Clone the repository:
 bash
 Copy code
-git clone https://github.com/yourusername/portfolio-project.git
+git clone https://github.com/JanivDemagniv/protfolio.git
 Navigate to the project directory:
 bash
 Copy code
