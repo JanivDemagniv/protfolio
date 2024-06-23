@@ -35,4 +35,20 @@ to get the icons I aid with Bootstrap icon section.
 
 To view the project locally:
 
-Github link:
+Clone the repository:
+bash
+Copy code
+git clone https://github.com/yourusername/portfolio-project.git
+Navigate to the project directory:
+bash
+Copy code
+cd portfolio-project
+Open index.html in your web browser.
+Usage
+Navigate through the portfolio to explore the different landing pages and see the implementation of various web technologies.
+
+Contributing
+If you'd like to contribute to this project, please fork the repository and use a feature branch. Pull requests are welcome.
+
+License
+This project is licensed under the MIT License.
